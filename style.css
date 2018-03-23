@@ -1,7 +1,179 @@
-#particles-js{
-	background: #f2f2f2;
+#particles-js {
+	background-color: #bfbfbf;
+	height: 500px;
+	width: 100%;
+	position: relative;
 }
+
 *, html {
    margin: 0;
    padding: 0;
+	font-family: 'Orbitron', sans-serif;
+
+}
+
+#text{
+	text-shadow: 2px 1px black;
+	position: absolute;
+	top: 30%;
+	width: 100%;
+	
+	max-width: 700px;
+	left:0;
+	right:0;
+	margin:0 auto;
+	border: solid 2px red;
+	
+	
+	background-color: darkgrey;
+	overflow:hidden;
+	text-align: center;
+	box-shadow: 0px 5px 20px 5px black;
+	background:#64C7CC;
+
+}
+
+
+#test {
+	clear: left;
+	position: absolute;
+	top:auto;
+
+}
+
+ .navbar {
+  min-height: 80px;
+	 border-bottom: solid red 2px;
+}
+
+.navbar-brand {
+  padding: 0 15px;
+  height: 80px;
+  line-height: 80px;
+}
+
+.navbar-toggle {
+  /* (80px - button height 34px) / 2 = 23px */
+  margin-top: 23px;
+  padding: 9px 10px !important;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    /* (80px - line-height of 27px) / 2 = 26.5px */
+    padding-top: 26.5px;
+    padding-bottom: 26.5px;
+    line-height: 27px;
+  }
+}
+
+/* navbar style end */
+
+/* hexagone style start */
+
+.hexagon {
+  position: relative;
+  width: 170px; 
+  height: 98.15px;
+  background-color: #64C7CC;
+  margin: 49.07px 0;
+  box-shadow: 0 0 20px rgba(0,0,0,0.7);
+  border-left: solid 3px #ff2434;
+  border-right: solid 3px #ff2434;
+	
+	 margin-left: auto;
+    margin-right: auto
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 120.21px;
+  height: 120.21px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 21.8959px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.7);
+}
+
+.hexagon:before {
+  top: -60.1041px;
+  border-top: solid 4.2426px #ff2434;
+  border-right: solid 4.2426px #ff2434;
+}
+
+.hexagon:after {
+  bottom: -60.1041px;
+  border-bottom: solid 4.2426px #ff2434;
+  border-left: solid 4.2426px #ff2434;
+}
+
+/*cover up extra shadows*/
+.hexagon span {
+  display: block;
+  position: absolute;
+  top:1.7320508075688772px;
+  left: 0;
+  width:164px;
+  height:94.6854px;
+  z-index: 2;
+  background: inherit;
+}
+/* hexagone style end */
+
+#textheader{
+	color: white;
+	font-size: large;
+font-family: 'Orbitron', sans-serif;
+
+}
+
+#textheader:hover {
+	color: red;
+}
+
+/* icon css */
+.image-icon {
+
+	position: absolute;
+	top: -20px;
+	left: 15px ;
+}
+
+.abs {
+	width: 100%;
+	height: 100%;
+}
+
+/* picture section */
+.hexagon1 {
+  position: relative;
+  width: 300px; 
+  height: 173.21px;
+  background-color: #64C7CC;
+  margin: 86.60px 0;
+}
+
+.hexagon1:before,
+.hexagon1:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+}
+
+.hexagon1:before {
+  bottom: 100%;
+  border-bottom: 86.60px solid #64C7CC;
+}
+
+.hexagon1:after {
+  top: 100%;
+  width: 0;
+  border-top: 86.60px solid #64C7CC;
 }
