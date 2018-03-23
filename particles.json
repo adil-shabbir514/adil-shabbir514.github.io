@@ -1,10 +1,10 @@
 {
 	"particles":{
 		"number":{
-			"value":150
+			"value":125
 		},
 		"color":{
-			"value":"#00FFFF"
+			"value":"#000000"
 		},
 		"shape":{
 			"type":"circle",
@@ -32,12 +32,12 @@
 		"line_linked":{
 			"enable":true,
 			"distance":120,
-			"color":"#00FFFF",
+			"color":"#ff3300",
 			"width":1
 		},
 		"move":{
 		"enable":true,
-		"speed":4,
+		"speed":2,
 		"direction":"none"
 	}
 	},
