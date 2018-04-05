@@ -2,46 +2,67 @@
 <html lang="en">
 	
 <head>
-  <title>My Portfolio</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<title>My Portfolio</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">  
+	<link href="https://fonts.googleapis.com/css?family=Eczar" rel="stylesheet">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+	<!-- Google Fonts end -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 	
 <body>
-	
 	<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
-	
   <div class="container-fluid">
-	  <div class="navbar-header">
-            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-       <!--
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">WebSiteName</a>
-    </div> -->
-		   </div>
-	  <div id="navbarCollapse" class="collapse navbar-collapse">
-    <ul class="nav navbar-nav">
-                <li id="textheader" class="wow fadeInDown"><a id="textheader" class="active" href="#"><i class="fa fa-home fa"></i> HOME</a></li>
-                <li class="wow fadeInDown delay05"><a id="textheader" href="#"><i class="fa fa-user fa"></i>ABOUT</a></li>
-                <li class="wow fadeInDown delay05"><a id="textheader" href="#"><i class="fa fa-map fa"></i> PROJECTS</a></li>
-                <li class="wow fadeInDown delay15"><a id="textheader" href="#"><i  class="fa fa-bolt fa"></i> CONTACT</a></li>
-             
+    
+		  <button type="button" class="navbar-toggle" data-toggle="collapse"  data-target="#myNavbar">
+         <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                       
+      </button>
+		<div  class="navbar-header">
+				<a  class="navbar-brand" href="#"> <img src="images/logo_main1.png " id="logo_header"  height="90px" width="90px"> </a>
+				
+			</div>
+   
+    </div>
+	  
+    <div class="collapse navbar-collapse" id="myNavbar">
+
+		 <ul id="nav_top" class="nav navbar-nav">
+                	
+				
+				<li class="buttonstop wow fadeInDown delay05"><a id="textheader" href="#section1"><i class="icontop fa fa-home fa"></i> 	&nbsp;HOME</a></li>
+                <li class="buttonstop wow fadeInDown delay05"><a id="textheader" href="#section2"><i class="icontop fa fa-user fa"></i>  	&nbsp;ABOUT</a></li>
+                <li class="buttonstop wow fadeInDown delay05"><a id="textheader" href="#section3"><i class="fa fa-map fa"></i>  	&nbsp;PROJECTS</a></li>
+                <li class="buttonstop wow fadeInDown delay15"><a id="textheader" href="#"><i  class="icontop fa fa-envelope fa" ></i>  	&nbsp;CONTACT</a></li>
+             	 
             </ul>
-	  </div>
+		  <ul class="nav navbar-nav navbar-right">
+      <li>
+			  
+      <li> <a id="social_icons" href="#" class="fa_social fa fa-github"></a></li>
+      <li> <a id="social_icons" href="#" class="fa_social fa fa-linkedin"></a></li>
+    </ul>
+    </div>
   </div>
 </nav>
 	
+	<div id="section1"></div>
 
 	<br>
 	<br>
@@ -49,9 +70,9 @@
 	<br>
 		
 <!-- <h1>Scroll this page to see the effect</h1> -->
-
+	
 <!-- particles animation start -->
-	<div id="particles-js" width=100%>
+	<div  id="particles-js" width=100%>
 		<div id="particles">
 	
 	</div>
@@ -62,23 +83,29 @@
 <div  id="text">
 	<div id="stext">
 		<br>
-		<img src="images/logo.png" width="50px" height="50px" alt="logo img">
-
-		<h1 style="position:static">Hi, I'm Adil. This portfolio is under construction. </h1>
-		
-		<h1><span class="ityped"></span></h1>
+	
+	
+		<h1 id="intro" style="position:static"><b>Hi, I'm <span id="nameText">Adil. </span> </b> </h1>
+		<div id="typed_text"><img src="images/search.png" id="search_icon" align="left" height="60px" width="60px" >
+			<h1 ><b> <span class="ityped"></span></b></h1>
+		</div>
 		<br>
-		<button type="button" class="btn btn-primary btn-lg">Yes, I'm available for hire!</button> 
+		<button type="button" class="btn btn-primary btn-lg btn_hire">Yes, I'm available for hire!</button> 
 		<br>
 		</div>
+	
 	<br>
+	
 	</div>
+		 
 	</div>
 	
+	<div id="section2"></div>
 	<!-- about me section -->
 	<br/>
-
+	
 	<div align="center"><h1>ABOUT ME</h1></div>
+	 <hr>
 	<br/>
 	
 <div  class="container">
@@ -123,16 +150,70 @@
 </div>
 		
 	<!-- new section -->
-	<div  class="container">
+	<div  id="aboutmesection" class="container">
 	  <div class="row">
 		<div class="col-sm-6">
-			<div class="hexagon1">
-				<h2>Who's this guy?
-				</h2>
-			</div>
+			<div align="center"  id="imageadil">
+				<img src="images/adil3.png" height="400px" width="400px">
+			
+			<h2>Who's this guy?</h2>
+			<p>
+				I'm the Front-End Developer for EyeCue Lab in Portland, OR. 
+				I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences. 
+				Let's make something special.
+			</p>
+				</div>
 		 </div>
+		  <!--skill bar start -->
+		  <div class="col-sm-6">
+			 <h1>My Skills</h1>
+
+			<div class="skillbar clearfix " data-percent="90%">
+				<div class="skillbar-title" style="background: #d35400;"><span>HTML5/CSS3</span></div>
+				<div class="skillbar-bar" style="background: #e67e22;"></div>
+				<div class="skill-bar-percent">90%</div>
+			</div> <!-- End Skill Bar --
+
+			<div class="skillbar clearfix " data-percent="25%">
+				<div class="skillbar-title" style="background: #2980b9;"><span>CSS3</span></div>
+				<div class="skillbar-bar" style="background: #3498db;"></div>
+				<div class="skill-bar-percent">25%</div>
+			</div> <!-- End Skill Bar -->
+
+			<div class="skillbar clearfix " data-percent="90%">
+				<div class="skillbar-title" style="background: #2c3e50;"><span>javaScript/jQuery</span></div>
+				<div class="skillbar-bar" style="background: #2c3e50;"></div>
+				<div class="skill-bar-percent">90%</div>
+			</div> <!-- End Skill Bar -->
+
+			<div class="skillbar clearfix " data-percent="80%">
+				<div class="skillbar-title" style="background: #46465e;"><span>PHP</span></div>
+				<div class="skillbar-bar" style="background: #5a68a5;"></div>
+				<div class="skill-bar-percent">80%</div>
+			</div> <!-- End Skill Bar -->
+
+			<div class="skillbar clearfix " data-percent="80%">
+				<div class="skillbar-title" style="background: #333333;"><span>ASP.NET C#/VB.NET</span></div>
+				<div class="skillbar-bar" style="background: #525252;"></div>
+				<div class="skill-bar-percent">80%</div>
+			</div> <!-- End Skill Bar -->
+
+			<div class="skillbar clearfix " data-percent="80%">
+				<div class="skillbar-title" style="background: #27ae60;"><span>JAVA EE & Android</span></div>
+				<div class="skillbar-bar" style="background: #2ecc71;"></div>
+				<div class="skill-bar-percent">80%</div>
+			</div> <!-- End Skill Bar -->
+
+			<div class="skillbar clearfix " data-percent="80%">
+				<div class="skillbar-title" style="background: #124e8c;"><span>PLSQL/MYSQL</span></div>
+				<div class="skillbar-bar" style="background: #4288d0;"></div>
+				<div class="skill-bar-percent">80%</div>
+			</div> <!-- End Skill Bar -->
+
+		  </div>
 	  </div>
 	</div>
+
 <!-- Typescript end -->
 	
 </body>
@@ -148,8 +229,7 @@
 	</script>
 	
 <!-- jquery script -->
-	<script src="https://code.jquery.com/jquery-3.3.1.js">
-	</script>
+
 	
 <!-- type script -->
 	<script type="text/javascript"
@@ -159,9 +239,45 @@
 	<script type="text/javascript">
 		window.ityped.init(document.querySelector('.ityped'),{
 			strings: [' I am a full stack web developer',' I love to make stunning websites'],
-			loop: true
+			loop: true,
+			
+			
 		})
 	</script>
+	
+	
+	<!-- Dynamic loading bar script -->
+	
+	<script>
+$(document).ready(function(){
+
+  // Add scrollspy to <body>
+  $('body').scrollspy({target: ".navbar", offset: 50});   
+
+  // Add smooth scrolling on all links inside the navbar
+  $("#myNavbar a").on('click', function(event) {
+	
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }  // End if
+  });
+});
+</script>
 	
 	
 </html>
